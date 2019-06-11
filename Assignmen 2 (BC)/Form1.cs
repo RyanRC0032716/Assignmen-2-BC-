@@ -34,5 +34,23 @@ namespace Assignmen_2__BC_
                 MessageBox.Show("Error you dummy - Type in two numbers");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Calculate the total resistance in the series circuit of 3 resistors
+            try
+            {
+                double R1, R2, R3, Resistance;
+                R1 = Convert.ToDouble(textBox3.Text);
+                R2 = Convert.ToDouble(textBox4.Text);
+                R3 = Convert.ToDouble(textBox5.Text);
+                Resistance = R1 + R2 + R3;
+                label7.Text = "Resistance = " + Resistance;
+            }
+            catch
+            {
+                MessageBox.Show("Error you dummy - Type three numbers");
+            }
+        }
     }
 }
