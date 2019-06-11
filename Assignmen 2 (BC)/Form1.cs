@@ -22,9 +22,16 @@ namespace Assignmen_2__BC_
             // Calculate the total resistance in the series circuit of 2 resistors
             try
             {
-                Double R1, R2, RT;
+                Double R1, R2, Resistance;
                 R1 = Convert.ToDouble(textBox1.Text);
                 R2 = Convert.ToDouble(textBox2.Text);
+                Resistance = R1 + R2;
+                label3.Text = "Resistance = " + Resistance;
+
+            }
+            catch
+            {
+                MessageBox.Show("Error you dummy - Type in two numbers");
             }
         }
     }
