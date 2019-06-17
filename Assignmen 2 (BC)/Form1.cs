@@ -52,5 +52,79 @@ namespace Assignmen_2__BC_
                 MessageBox.Show("Error you dummy - Type three numbers");
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Calculate the total resistance in the series circuit of 4 resistors
+            try
+            {
+                double R1, R2, R3, R4, Resistance;
+                R1 = Convert.ToDouble(textBox6.Text);
+                R2 = Convert.ToDouble(textBox7.Text);
+                R3 = Convert.ToDouble(textBox8.Text);
+                R4 = Convert.ToDouble(textBox9.Text);
+                Resistance = R1 + R2 + R3 + R4;
+                label12.Text = "Resistance =" + Resistance;
+            }
+            catch
+            {
+                MessageBox.Show("Error you dummy - Type 4 numbers");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Calculate the total resistance in the series circuit of 5 resistors
+            try
+            {
+                double R1, R2, R3, R4, R5, Resistance;
+                R1 = Convert.ToDouble(textBox10.Text);
+                R2 = Convert.ToDouble(textBox11.Text);
+                R3 = Convert.ToDouble(textBox12.Text);
+                R4 = Convert.ToDouble(textBox13.Text);
+                R5 = Convert.ToDouble(textBox14.Text);
+                Resistance = R1 + R2 + R3 + R4 + R5;
+                label18.Text = "Resistance =" + Resistance;
+            }
+            catch
+            {
+                MessageBox.Show("Error you dummy - Type 5 numbers");
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Calculate the total resistance in a parallel circuit of 2 resistors
+            try
+            {
+                Double R1, R2, Resistance;
+                R1 = Convert.ToDouble(textBox15.Text);
+                R2 = Convert.ToDouble(textBox16.Text);
+                Resistance = 1 / (1 / R1 + 1 / R2);
+                label21.Text = "Resistance = " + Resistance;
+            }
+            catch
+            {
+                MessageBox.Show("Error you dummy - Type 2 numbers");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // Calculate the total resistance in a parallel circuit of 3 resistors
+            try
+            {
+                Double R1, R2, R3, Resistance;
+                R1 = Convert.ToDouble(textBox17.Text);
+                R2 = Convert.ToDouble(textBox18.Text);
+                R3 = Convert.ToDouble(textBox19.Text);
+                Resistance = 1 / (1 / R1 + 1 / R2 + 1 / R3);
+                label25.Text = "Resistance = " + Resistance;
+            }
+            catch
+            {
+                MessageBox.Show("Error you dummy - Type 3 numbers");
+            }
+        }
     }
 }

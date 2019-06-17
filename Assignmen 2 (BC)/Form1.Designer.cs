@@ -390,6 +390,7 @@
             this.button3.TabIndex = 0;
             this.button3.Text = "Calculate";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // tabPage5
             // 
@@ -510,6 +511,7 @@
             this.button4.TabIndex = 0;
             this.button4.Text = "Calculate";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tabPage6
             // 
@@ -535,6 +537,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Calculate";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label21
             // 
@@ -603,6 +606,7 @@
             this.button6.TabIndex = 7;
             this.button6.Text = "Calculate";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label25
             // 
