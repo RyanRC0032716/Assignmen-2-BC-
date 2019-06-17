@@ -126,5 +126,44 @@ namespace Assignmen_2__BC_
                 MessageBox.Show("Error you dummy - Type 3 numbers");
             }
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            // Calculate the total resistance in a parallel circuit of 4 resistors
+            try
+            {
+                Double R1, R2, R3, R4, Resistance;
+                R1 = Convert.ToDouble(textBox20.Text);
+                R2 = Convert.ToDouble(textBox21.Text);
+                R3 = Convert.ToDouble(textBox22.Text);
+                R4 = Convert.ToDouble(textBox23.Text);
+                Resistance = 1 / (1 / R1 + 1 / R2 + 1 / R3 + 1 / R4);
+                label30.Text = "Resistance =" + Resistance;
+            }
+            catch
+            {
+                MessageBox.Show("Error you dummy - Type 4 numbers");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            // Calculate the total resistance in a parallel circuit of 5 resistors
+            try
+            {
+                Double R1, R2, R3, R4, R5, Resistance;
+                R1 = Convert.ToDouble(textBox24.Text);
+                R2 = Convert.ToDouble(textBox25.Text);
+                R3 = Convert.ToDouble(textBox26.Text);
+                R4 = Convert.ToDouble(textBox27.Text);
+                R5 = Convert.ToDouble(textBox28.Text);
+                Resistance = 1 / (1 / R1 + 1 / R2 + 1 / R3 + 1 / R4 + 1 / R5);
+                label36.Text = "Resistance =" + Resistance;
+            }
+            catch
+            {
+                MessageBox.Show("Error you dummy - Type 5 numbers");
+            }
+        }
     }
 }

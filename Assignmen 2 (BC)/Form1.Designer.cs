@@ -693,6 +693,7 @@
             this.button7.TabIndex = 9;
             this.button7.Text = "Calculate";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label30
             // 
@@ -797,6 +798,7 @@
             this.button8.TabIndex = 11;
             this.button8.Text = "Calculate";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label36
             // 
